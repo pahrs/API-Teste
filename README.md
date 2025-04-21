@@ -1,8 +1,10 @@
 # API de Gestão de Participantes
 
-Este projeto é uma API desenvolvida em Python utilizando o framework FastAPI. O objetivo é oferecer um sistema para importação, listagem, atualização e exclusão de dados de participantes.
+Este projeto é uma API desenvolvida em Python utilizando o framework FastAPI. Inicialmente, ele foi criado para atender às demandas de um processo seletivo de estágio. Por esse motivo, algumas partes do código original foram modificadas para não expor informações da empresa.
 
-A API também implementa um endpoint que simula o funcionamento de um webhook, realizando o cálculo de idade com base em uma data de nascimento recebida automaticamente.
+Ainda assim, a proposta principal permanece: oferecer um sistema para importação, listagem, atualização e exclusão de dados de participantes.
+
+A API também implementava um endpoint que simulava o funcionamento de um webhook. No entanto, essa parte foi substituída por um endpoint local, que apenas calcula automaticamente a idade com base na data de nascimento fornecida.
 
 ---
 
