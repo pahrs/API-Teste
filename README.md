@@ -96,22 +96,30 @@ Exemplo de corpo JSON:
 Remove todos os participantes da base de dados.
 
 ### POST `/webhook/`
-Calcula a idade com base na data de nascimento recebida e envia os dados para a API.
+Calcula a idade com base na data de nascimento fornecida.
 
-Exemplo de entrada:
+**Exemplo de entrada:**
 ```json
 {
-  "form_id": "form123",
   "data_nascimento": "1999-05-10"
 }
 ```
 
-Resposta:
+### POST `/webhook/`
+Calcula a idade com base na data de nascimento fornecida.
+
+**Exemplo de entrada:**
 ```json
 {
-  "form_id": "form123",
+  "data_nascimento": "1999-05-10"
+}
+```
+
+**Exemplo de resposta:**
+```json
+{
   "idade": 25,
-  "status": "Enviado com sucesso"
+  "status": "Idade calculada com sucesso"
 }
 ```
 
